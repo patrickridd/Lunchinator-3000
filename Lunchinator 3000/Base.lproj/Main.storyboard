@@ -234,7 +234,7 @@
         <!--ReviewViewController-->
         <scene sceneID="Drx-ZC-jD5">
             <objects>
-                <viewController storyboardIdentifier="reviewVC" id="1oy-up-Kpb" userLabel="ReviewViewController" customClass="RestaurantDetailViewController" customModule="Lunchinator_3000" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="reviewVC" id="1oy-up-Kpb" userLabel="ReviewViewController" customClass="ReviewViewController" customModule="Lunchinator_3000" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iwr-LY-qoV"/>
                         <viewControllerLayoutGuide type="bottom" id="v9e-Aq-ZAM"/>
@@ -300,13 +300,16 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="pz2-gw-eGA" id="FLh-sS-MO6"/>
                         <outlet property="foodImageView" destination="iy3-Jn-ba3" id="15i-RQ-9C9"/>
-                        <outlet property="nameLabel" destination="dzS-cX-Wdd" id="Wa7-VF-xdz"/>
+                        <outlet property="nameLabel" destination="dzS-cX-Wdd" id="wIC-hn-D3o"/>
+                        <outlet property="ratingImageView" destination="xNn-ta-CxJ" id="5yu-CR-nYJ"/>
+                        <outlet property="reviewLabel" destination="pz2-gw-eGA" id="l6W-bH-YUx"/>
                         <outlet property="starsImageView" destination="xNn-ta-CxJ" id="bEw-sa-aTu"/>
+                        <outlet property="userImageView" destination="iy3-Jn-ba3" id="NaD-Ja-z4w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Vf-pj-NeT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4330" y="417"/>
+            <point key="canvasLocation" x="4318" y="458"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="dn0-KE-4jt">
