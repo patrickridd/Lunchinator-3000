@@ -89,7 +89,12 @@
                             <outlet property="delegate" destination="3KL-k4-Ihb" id="4o4-py-XcM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FJR-6D-btl"/>
+                    <navigationItem key="navigationItem" id="FJR-6D-btl">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="dtd-a4-pOo"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="dtd-a4-pOo" id="Lxm-9D-D9d"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPI-wl-tyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,7 +159,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xvp-2j-jMt" userLabel="imageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xvp-2j-jMt" userLabel="imageView">
                                 <rect key="frame" x="10" y="30" width="150" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="BHE-SP-QK7"/>
@@ -244,7 +249,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iy3-Jn-ba3" userLabel="personImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iy3-Jn-ba3" userLabel="personImageView">
                                 <rect key="frame" x="10" y="30" width="150" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iy3-Jn-ba3" secondAttribute="height" multiplier="6:5" id="vl3-0f-bZP"/>
@@ -256,7 +261,7 @@
                                     <constraint firstAttribute="height" constant="40" id="ch3-cN-8dD"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pz2-gw-eGA" userLabel="review">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pz2-gw-eGA" userLabel="review">
                                 <rect key="frame" x="26" y="235" width="323" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>

@@ -21,6 +21,13 @@ class ReviewsPageViewController: UIPageViewController, UIPageViewControllerDeleg
         self.delegate = self
         self.dataSource = self
         
+        
+
+        let appearance = UIPageControl.appearance(whenContainedInInstancesOf: [UIPageViewController.self])
+        appearance.pageIndicatorTintColor = UIColor.lightGray
+        appearance.currentPageIndicatorTintColor = UIColor.darkGray
+
+        
         guard let restaurant = self.restaurant else { return }
         getReviews(restaurant: restaurant)
     }

@@ -10,12 +10,13 @@ import UIKit
 
 class RestaurantTableViewController: UITableViewController {
 
+    @IBOutlet weak var backButton: UIBarButtonItem!
     var restaurants: [Restaurant] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Browse Restaurants"
+        setupNavigationTitles()
         
         // Get sorted restaurants for Data Source
         RestaurantController.sharedController.getRestaurants { (restaurants) in
@@ -24,8 +25,17 @@ class RestaurantTableViewController: UITableViewController {
             self.tableView.reloadData()
         }
         
+        
+        
     }
+    
 
+    func setupNavigationTitles() {
+        self.title = "Browse Restaurants"
+        let barButton = UIBarButtonItem()
+        barButton.title = ""
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = barButton
+    }
    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
