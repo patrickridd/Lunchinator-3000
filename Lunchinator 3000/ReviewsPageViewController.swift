@@ -21,8 +21,6 @@ class ReviewsPageViewController: UIPageViewController, UIPageViewControllerDeleg
         self.delegate = self
         self.dataSource = self
         
-        
-
         let appearance = UIPageControl.appearance(whenContainedInInstancesOf: [UIPageViewController.self])
         appearance.pageIndicatorTintColor = UIColor.lightGray
         appearance.currentPageIndicatorTintColor = UIColor.darkGray

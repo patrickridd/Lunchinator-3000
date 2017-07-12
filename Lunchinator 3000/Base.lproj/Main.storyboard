@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="j5S-T6-8hz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ARa-28-2TO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -29,11 +29,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Browse Restaurants"/>
                                 <connections>
-                                    <segue destination="OHn-p2-YLr" kind="showDetail" action="showViewController:sender:" id="pQu-n4-igH"/>
+                                    <segue destination="3KL-k4-Ihb" kind="show" id="JOX-t1-DY9"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dKg-wO-ZuB">
-                                <rect key="frame" x="20" y="95" width="335" height="189"/>
+                                <rect key="frame" x="20" y="139" width="335" height="145"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,13 +46,14 @@
                             <constraint firstItem="Oks-Mk-Obc" firstAttribute="centerY" secondItem="8Xc-CQ-9HT" secondAttribute="centerY" id="z4M-Vf-32o"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8M9-4D-yA7"/>
                     <connections>
                         <outlet property="logoImageView" destination="dKg-wO-ZuB" id="15n-6g-dl6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AMu-Id-E6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-31" y="35"/>
+            <point key="canvasLocation" x="1444" y="44.527736131934034"/>
         </scene>
         <!--Restaurant Table View Controller-->
         <scene sceneID="x2c-8F-a43">
@@ -89,16 +90,11 @@
                             <outlet property="delegate" destination="3KL-k4-Ihb" id="4o4-py-XcM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FJR-6D-btl">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="dtd-a4-pOo"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="backButton" destination="dtd-a4-pOo" id="Lxm-9D-D9d"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="FJR-6D-btl"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPI-wl-tyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="43"/>
+            <point key="canvasLocation" x="2266" y="40"/>
         </scene>
         <!--Restaurant View Controller-->
         <scene sceneID="sbz-e8-PnQ">
@@ -145,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IuR-5r-683" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2285.5999999999999" y="42.728635682158924"/>
+            <point key="canvasLocation" x="3079" y="43"/>
         </scene>
         <!--RestaurantDetailViewController-->
         <scene sceneID="irg-TV-FjQ">
@@ -235,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XyE-ce-g1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3005.5999999999999" y="175.86206896551727"/>
+            <point key="canvasLocation" x="3944.8000000000002" y="175.86206896551727"/>
         </scene>
         <!--ReviewViewController-->
         <scene sceneID="Drx-ZC-jD5">
@@ -312,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Vf-pj-NeT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4318" y="458"/>
+            <point key="canvasLocation" x="5256.8000000000002" y="457.42128935532236"/>
         </scene>
         <!--Reviews Page View Controller-->
         <scene sceneID="dn0-KE-4jt">
@@ -320,25 +316,25 @@
                 <pageViewController storyboardIdentifier="reviewsPageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vuX-eN-SW3" customClass="ReviewsPageViewController" customModule="Lunchinator_3000" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WaN-gC-fyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3695" y="181"/>
+            <point key="canvasLocation" x="4632.8000000000002" y="180.35982008995504"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Kwb-Px-6LW">
+        <scene sceneID="Swh-eS-yo7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OHn-p2-YLr" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ARa-28-2TO" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qob-RB-q7X">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Is-s9-neq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="3KL-k4-Ihb" kind="relationship" relationship="rootViewController" id="fwI-aA-nhQ"/>
+                        <segue destination="j5S-T6-8hz" kind="relationship" relationship="rootViewController" id="y9g-zB-u7l"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kyn-4U-m6B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WMg-kG-yGI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766" y="44"/>
+            <point key="canvasLocation" x="504.80000000000001" y="44.527736131934034"/>
         </scene>
     </scenes>
     <resources>
