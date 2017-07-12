@@ -10,6 +10,8 @@ import Foundation
 
 class Restaurant {
     
+    let restaurantImageBaseURL = "https://interview-project-17987.herokuapp.com/images/"
+    
     let nameKey = "name"
     let waitTimeKey = "waitTimeMinutes"
     let typesKey = "types"
@@ -35,7 +37,7 @@ class Restaurant {
         self.name = name
         self.waitTime = waitTime
         self.typesOfFood = typesOfFood
-        self.image = image
+        self.image = "\(self.restaurantImageBaseURL)\(image)"
         self.description = description
     
     }
