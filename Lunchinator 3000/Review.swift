@@ -18,7 +18,7 @@ class Review {
     
     let restaurant: String
     let reviewer: String
-    let rating: String
+    let rating: Rating?
     let review: String
     
     
@@ -32,7 +32,7 @@ class Review {
         
         self.restaurant = restaurant
         self.reviewer = reviewer
-        self.rating = rating
+        self.rating = Rating(rawValue: rating)
         self.review = review
         
     }

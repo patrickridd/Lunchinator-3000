@@ -30,9 +30,8 @@ class RestaurantDetailViewController: UIViewController {
         self.nameLabel.text = restaurant.name
         self.waitTimeLabel.text = "Wait Time: \(restaurant.waitTime) minutes"
         self.descriptionLabel.text = restaurant.description
-        // Stars image
         
-       ImageController.imageForURL(url: restaurant.image, completion: { (image) in
+       ImageController.sharedController.imageForURL(url: restaurant.image, completion: { (image) in
             if let image = image {
                 self.foodImageView.image = image
             }

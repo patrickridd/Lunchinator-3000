@@ -22,6 +22,7 @@
 		2138A8D51F15CF0800116AAC /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D41F15CF0800116AAC /* RestaurantTableViewController.swift */; };
 		2138A8D71F15CF3300116AAC /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D61F15CF3300116AAC /* RestaurantViewController.swift */; };
 		2138A8D91F16A22B00116AAC /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D81F16A22B00116AAC /* RestaurantDetailViewController.swift */; };
+		2138A8DB1F16B38600116AAC /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8DA1F16B38600116AAC /* Rating.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		2138A8D41F15CF0800116AAC /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		2138A8D61F15CF3300116AAC /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		2138A8D81F16A22B00116AAC /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		2138A8DA1F16B38600116AAC /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			children = (
 				2138A8C61F15CE7500116AAC /* Restaurant.swift */,
 				2138A8C81F15CE7E00116AAC /* Review.swift */,
+				2138A8DA1F16B38600116AAC /* Rating.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2138A8DB1F16B38600116AAC /* Rating.swift in Sources */,
 				2138A8CD1F15CE9F00116AAC /* NetworkController.swift in Sources */,
 				2138A8D71F15CF3300116AAC /* RestaurantViewController.swift in Sources */,
 				2138A8D31F15CEF000116AAC /* HomeScreenViewController.swift in Sources */,

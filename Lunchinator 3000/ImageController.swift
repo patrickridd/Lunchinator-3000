@@ -11,7 +11,10 @@ import UIKit
 
 class ImageController {
     
-    static func imageForURL(url: String, completion: @escaping ((_ image: UIImage?) -> Void)) {
+    static let sharedController = ImageController()
+
+    
+    func imageForURL(url: String, completion: @escaping ((_ image: UIImage?) -> Void)) {
         
         guard let url = URL(string: url) else { fatalError("Image URL Optional is nil") }
         NetworkController.performRequestForURL(url: url, httpMethod: .get) { (data, error) in
