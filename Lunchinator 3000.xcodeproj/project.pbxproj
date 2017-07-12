@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2138A8A41F15CD5100116AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8A31F15CD5100116AAC /* AppDelegate.swift */; };
-		2138A8A61F15CD5100116AAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8A51F15CD5100116AAC /* ViewController.swift */; };
 		2138A8A91F15CD5100116AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2138A8A71F15CD5100116AAC /* Main.storyboard */; };
 		2138A8AB1F15CD5100116AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2138A8AA1F15CD5100116AAC /* Assets.xcassets */; };
 		2138A8AE1F15CD5100116AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2138A8AC1F15CD5100116AAC /* LaunchScreen.storyboard */; };
 		2138A8B91F15CD5100116AAC /* Lunchinator_3000Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8B81F15CD5100116AAC /* Lunchinator_3000Tests.swift */; };
+		2138A8C71F15CE7500116AAC /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8C61F15CE7500116AAC /* Restaurant.swift */; };
+		2138A8C91F15CE7E00116AAC /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8C81F15CE7E00116AAC /* Review.swift */; };
+		2138A8CB1F15CE8F00116AAC /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8CA1F15CE8F00116AAC /* ImageController.swift */; };
+		2138A8CD1F15CE9F00116AAC /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8CC1F15CE9E00116AAC /* NetworkController.swift */; };
+		2138A8CF1F15CEAD00116AAC /* ReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8CE1F15CEAD00116AAC /* ReviewController.swift */; };
+		2138A8D11F15CEBB00116AAC /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D01F15CEBB00116AAC /* RestaurantController.swift */; };
+		2138A8D31F15CEF000116AAC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D21F15CEF000116AAC /* HomeScreenViewController.swift */; };
+		2138A8D51F15CF0800116AAC /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D41F15CF0800116AAC /* RestaurantTableViewController.swift */; };
+		2138A8D71F15CF3300116AAC /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D61F15CF3300116AAC /* RestaurantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +36,6 @@
 /* Begin PBXFileReference section */
 		2138A8A01F15CD5100116AAC /* Lunchinator 3000.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunchinator 3000.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2138A8A31F15CD5100116AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2138A8A51F15CD5100116AAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2138A8A81F15CD5100116AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2138A8AA1F15CD5100116AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2138A8AD1F15CD5100116AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +43,15 @@
 		2138A8B41F15CD5100116AAC /* Lunchinator 3000Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lunchinator 3000Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2138A8B81F15CD5100116AAC /* Lunchinator_3000Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunchinator_3000Tests.swift; sourceTree = "<group>"; };
 		2138A8BA1F15CD5100116AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2138A8C61F15CE7500116AAC /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		2138A8C81F15CE7E00116AAC /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		2138A8CA1F15CE8F00116AAC /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		2138A8CC1F15CE9E00116AAC /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		2138A8CE1F15CEAD00116AAC /* ReviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewController.swift; sourceTree = "<group>"; };
+		2138A8D01F15CEBB00116AAC /* RestaurantController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantController.swift; sourceTree = "<group>"; };
+		2138A8D21F15CEF000116AAC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		2138A8D41F15CF0800116AAC /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		2138A8D61F15CF3300116AAC /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				2138A8A31F15CD5100116AAC /* AppDelegate.swift */,
-				2138A8A51F15CD5100116AAC /* ViewController.swift */,
+				2138A8C41F15CE1300116AAC /* Model */,
+				2138A8C51F15CE2000116AAC /* Model Controller */,
+				2138A8C31F15CE0700116AAC /* View Controllers */,
 				2138A8A71F15CD5100116AAC /* Main.storyboard */,
 				2138A8AA1F15CD5100116AAC /* Assets.xcassets */,
 				2138A8AC1F15CD5100116AAC /* LaunchScreen.storyboard */,
@@ -94,6 +112,36 @@
 				2138A8BA1F15CD5100116AAC /* Info.plist */,
 			);
 			path = "Lunchinator 3000Tests";
+			sourceTree = "<group>";
+		};
+		2138A8C31F15CE0700116AAC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2138A8D21F15CEF000116AAC /* HomeScreenViewController.swift */,
+				2138A8D41F15CF0800116AAC /* RestaurantTableViewController.swift */,
+				2138A8D61F15CF3300116AAC /* RestaurantViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2138A8C41F15CE1300116AAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2138A8C61F15CE7500116AAC /* Restaurant.swift */,
+				2138A8C81F15CE7E00116AAC /* Review.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2138A8C51F15CE2000116AAC /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2138A8CA1F15CE8F00116AAC /* ImageController.swift */,
+				2138A8CC1F15CE9E00116AAC /* NetworkController.swift */,
+				2138A8CE1F15CEAD00116AAC /* ReviewController.swift */,
+				2138A8D01F15CEBB00116AAC /* RestaurantController.swift */,
+			);
+			name = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +249,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2138A8A61F15CD5100116AAC /* ViewController.swift in Sources */,
+				2138A8CD1F15CE9F00116AAC /* NetworkController.swift in Sources */,
+				2138A8D71F15CF3300116AAC /* RestaurantViewController.swift in Sources */,
+				2138A8D31F15CEF000116AAC /* HomeScreenViewController.swift in Sources */,
+				2138A8D51F15CF0800116AAC /* RestaurantTableViewController.swift in Sources */,
+				2138A8D11F15CEBB00116AAC /* RestaurantController.swift in Sources */,
+				2138A8CF1F15CEAD00116AAC /* ReviewController.swift in Sources */,
+				2138A8C71F15CE7500116AAC /* Restaurant.swift in Sources */,
 				2138A8A41F15CD5100116AAC /* AppDelegate.swift in Sources */,
+				2138A8C91F15CE7E00116AAC /* Review.swift in Sources */,
+				2138A8CB1F15CE8F00116AAC /* ImageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
