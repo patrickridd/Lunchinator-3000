@@ -60,7 +60,6 @@ class RestaurantTableViewController: UITableViewController {
             
             // Pass it to RestaurantViewController
             restaurantVC.restaurant = restaurant
-            
         }
         
     }

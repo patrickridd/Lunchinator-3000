@@ -153,7 +153,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xvp-2j-jMt" userLabel="foodImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xvp-2j-jMt" userLabel="imageView">
                                 <rect key="frame" x="10" y="30" width="150" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="BHE-SP-QK7"/>
@@ -230,6 +230,83 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XyE-ce-g1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3005.5999999999999" y="175.86206896551727"/>
+        </scene>
+        <!--ReviewViewController-->
+        <scene sceneID="Drx-ZC-jD5">
+            <objects>
+                <viewController storyboardIdentifier="reviewVC" id="1oy-up-Kpb" userLabel="ReviewViewController" customClass="RestaurantDetailViewController" customModule="Lunchinator_3000" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iwr-LY-qoV"/>
+                        <viewControllerLayoutGuide type="bottom" id="v9e-Aq-ZAM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y1K-OO-0Gh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iy3-Jn-ba3" userLabel="personImageView">
+                                <rect key="frame" x="10" y="30" width="150" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="nRh-x4-FYw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fourStars" translatesAutoresizingMaskIntoConstraints="NO" id="xNn-ta-CxJ" userLabel="starsImageview">
+                                <rect key="frame" x="175" y="105" width="174" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ch3-cN-8dD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pz2-gw-eGA" userLabel="review">
+                                <rect key="frame" x="26" y="235" width="323" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzS-cX-Wdd" userLabel="nameLabel">
+                                <rect key="frame" x="175" y="45" width="174" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1FI-68-6WX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20784313730000001" green="0.72941176470000002" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTU-du-vLM">
+                                <rect key="frame" x="5" y="175" width="365" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.52941176469999995" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tqt-Mq-Ttg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dzS-cX-Wdd" secondAttribute="trailing" constant="10" id="0gH-UT-dem"/>
+                            <constraint firstItem="nTU-du-vLM" firstAttribute="top" secondItem="iy3-Jn-ba3" secondAttribute="bottom" constant="20" id="0qF-b0-bYG"/>
+                            <constraint firstItem="dzS-cX-Wdd" firstAttribute="top" secondItem="iwr-LY-qoV" secondAttribute="bottom" constant="25" id="7R2-wY-iUa"/>
+                            <constraint firstItem="iy3-Jn-ba3" firstAttribute="leading" secondItem="Y1K-OO-0Gh" secondAttribute="leading" constant="10" id="7qy-As-xfI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pz2-gw-eGA" secondAttribute="trailing" constant="10" id="C3f-Ae-89c"/>
+                            <constraint firstItem="pz2-gw-eGA" firstAttribute="leading" secondItem="Y1K-OO-0Gh" secondAttribute="leadingMargin" constant="10" id="MYL-EM-yth"/>
+                            <constraint firstItem="pz2-gw-eGA" firstAttribute="top" secondItem="nTU-du-vLM" secondAttribute="bottom" constant="20" id="OW3-mW-5uF"/>
+                            <constraint firstItem="xNn-ta-CxJ" firstAttribute="width" secondItem="dzS-cX-Wdd" secondAttribute="width" id="We9-2P-UwO"/>
+                            <constraint firstItem="xNn-ta-CxJ" firstAttribute="top" secondItem="dzS-cX-Wdd" secondAttribute="bottom" constant="20" id="Y1v-qa-ErM"/>
+                            <constraint firstItem="dzS-cX-Wdd" firstAttribute="leading" secondItem="iy3-Jn-ba3" secondAttribute="trailing" constant="15" id="cl6-d5-SlF"/>
+                            <constraint firstItem="nTU-du-vLM" firstAttribute="leading" secondItem="Y1K-OO-0Gh" secondAttribute="leading" constant="5" id="eLu-Ct-trq"/>
+                            <constraint firstItem="iy3-Jn-ba3" firstAttribute="top" secondItem="iwr-LY-qoV" secondAttribute="bottom" constant="10" id="hsG-9p-mEc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xNn-ta-CxJ" secondAttribute="trailing" constant="10" id="jkV-LT-e3o"/>
+                            <constraint firstAttribute="trailing" secondItem="nTU-du-vLM" secondAttribute="trailing" constant="5" id="kbj-Te-Lmu"/>
+                            <constraint firstItem="iy3-Jn-ba3" firstAttribute="width" secondItem="Y1K-OO-0Gh" secondAttribute="width" multiplier="2/5" id="w0E-Cz-2wD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="pz2-gw-eGA" id="FLh-sS-MO6"/>
+                        <outlet property="foodImageView" destination="iy3-Jn-ba3" id="15i-RQ-9C9"/>
+                        <outlet property="nameLabel" destination="dzS-cX-Wdd" id="Wa7-VF-xdz"/>
+                        <outlet property="starsImageView" destination="xNn-ta-CxJ" id="bEw-sa-aTu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Vf-pj-NeT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4330" y="417"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="dn0-KE-4jt">

@@ -9,30 +9,6 @@
 import UIKit
 
 class RestaurantViewController: UIViewController {
-
-    /*
- 
-   
-     
-     
-     // MARK: - View Controller Lifecycle
-     
-     override func viewDidLoad() {
-     super.viewDidLoad()
-     segmentedControl.initUI()
-     segmentedControl.selectedSegmentIndex = TabIndex.firstChildTab.rawValue
-     displayCurrentTab(TabIndex.firstChildTab.rawValue)
-     }
-     
-     override func viewWillDisappear(_ animated: Bool) {
-     super.viewWillDisappear(animated)
-     if let currentViewController = currentViewController {
-     currentViewController.viewWillDisappear(animated)
-     }
-     }
-     
-  
- */
     
     
     @IBOutlet weak var containerView: UIView!
@@ -49,10 +25,10 @@ class RestaurantViewController: UIViewController {
         return detailsVC
     }()
     
-    lazy var reviewsViewController : UIViewController? = {
-        let reviewsVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewControllerId")
-        
-        return reviewsVC
+    lazy var reviewsPageViewController : UIViewController? = {
+        let reviewsPageVC = self.storyboard?.instantiateViewController(withIdentifier: "reviewsPageVC") as? ReviewsPageViewController
+        reviewsPageVC?.restaurant = self.restaurant
+        return reviewsPageVC
     }()
 
     enum TabIndex : Int {
@@ -110,7 +86,7 @@ class RestaurantViewController: UIViewController {
         case TabIndex.detailsTab.rawValue :
             viewController = detailsViewController
         case TabIndex.reviewsTab.rawValue :
-            viewController = reviewsViewController
+            viewController = reviewsPageViewController
         default:
             return nil
         }

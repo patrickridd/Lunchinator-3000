@@ -23,6 +23,7 @@
 		2138A8D71F15CF3300116AAC /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D61F15CF3300116AAC /* RestaurantViewController.swift */; };
 		2138A8D91F16A22B00116AAC /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D81F16A22B00116AAC /* RestaurantDetailViewController.swift */; };
 		2138A8DB1F16B38600116AAC /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8DA1F16B38600116AAC /* Rating.swift */; };
+		2138A8DD1F16B81500116AAC /* ReviewsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8DC1F16B81500116AAC /* ReviewsPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		2138A8D61F15CF3300116AAC /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		2138A8D81F16A22B00116AAC /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		2138A8DA1F16B38600116AAC /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		2138A8DC1F16B81500116AAC /* ReviewsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				2138A8D41F15CF0800116AAC /* RestaurantTableViewController.swift */,
 				2138A8D61F15CF3300116AAC /* RestaurantViewController.swift */,
 				2138A8D81F16A22B00116AAC /* RestaurantDetailViewController.swift */,
+				2138A8DC1F16B81500116AAC /* ReviewsPageViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				2138A8A41F15CD5100116AAC /* AppDelegate.swift in Sources */,
 				2138A8C91F15CE7E00116AAC /* Review.swift in Sources */,
 				2138A8CB1F15CE8F00116AAC /* ImageController.swift in Sources */,
+				2138A8DD1F16B81500116AAC /* ReviewsPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

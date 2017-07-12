@@ -14,7 +14,7 @@ class ReviewController {
 
     let reviewUrlString = "https://interview-project-17987.herokuapp.com/api/restaurants"
     
-    func getReviews(for restaurant: String, completion: @escaping (_ reviews: Review?)-> Void) {
+    func getReviews(for restaurant: String, completion: @escaping (_ reviews: [Review]?)-> Void) {
        
     
         guard let reviewURL = URL(string:"\(self.reviewUrlString)\(restaurant)") else {
@@ -23,13 +23,19 @@ class ReviewController {
         }
         
         NetworkController.performRequestForURL(url: reviewURL, httpMethod: .get) { (data, error) in
-            guard let data = data, let jsonDictionary = (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)) as? [String:AnyObject], let review = Review(reviewDict: jsonDictionary) else {
+            guard let data = data, let jsonDictionary = (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)) as? [[String:AnyObject]] else {
                 print("Couldn't retrieve JSON data")
                 completion(nil)
                 return
             }
             
-            completion(review)
+            // initialize reviews
+            let reviews = jsonDictionary.flatMap({ Review(reviewDict: $0)})
+            
+            // get back on main queue to update UI
+            DispatchQueue.main.async {
+                completion(reviews)
+            }
         }
     
     }
