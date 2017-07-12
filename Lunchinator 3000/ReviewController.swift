@@ -12,12 +12,12 @@ class ReviewController {
     
     static let sharedController = ReviewController()
 
-    let reviewUrlString = "https://interview-project-17987.herokuapp.com/api/restaurants"
+    let reviewUrlString = "https://interview-project-17987.herokuapp.com/api/reviews/"
     
     func getReviews(for restaurant: String, completion: @escaping (_ reviews: [Review]?)-> Void) {
        
-    
-        guard let reviewURL = URL(string:"\(self.reviewUrlString)\(restaurant)") else {
+        guard let encodedName = restaurant.addingPercentEncoding( withAllowedCharacters: .urlQueryAllowed)
+, let reviewURL = URL(string: "\(self.reviewUrlString)\(encodedName)") else {
             completion(nil)
             return
         }

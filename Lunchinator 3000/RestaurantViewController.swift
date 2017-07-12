@@ -19,17 +19,17 @@ class RestaurantViewController: UIViewController {
     var currentViewController: UIViewController?
     
     // ViewControllers for SegmentControl
-    lazy var detailsViewController: UIViewController? = {
+    var detailsViewController: UIViewController? {
         let detailsVC = self.storyboard?.instantiateViewController(withIdentifier: "restaurantDetailVC") as? RestaurantDetailViewController
         detailsVC?.restaurant = self.restaurant
         return detailsVC
-    }()
+    }
     
-    lazy var reviewsPageViewController : UIViewController? = {
+    var reviewsPageViewController : UIViewController? {
         let reviewsPageVC = self.storyboard?.instantiateViewController(withIdentifier: "reviewsPageVC") as? ReviewsPageViewController
         reviewsPageVC?.restaurant = self.restaurant
         return reviewsPageVC
-    }()
+    }
 
     enum TabIndex : Int {
         case detailsTab = 0

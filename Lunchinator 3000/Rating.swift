@@ -10,10 +10,10 @@ import UIKit
 
 enum Rating: String {
     case oneStar = "1"
-    case twoStars
-    case threeStars
-    case fourStars
-    case fiveStars
+    case twoStars = "2"
+    case threeStars = "3"
+    case fourStars = "4"
+    case fiveStars = "5"
     
     
     var starImage: UIImage {

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -153,13 +154,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xvp-2j-jMt" userLabel="imageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xvp-2j-jMt" userLabel="imageView">
                                 <rect key="frame" x="10" y="30" width="150" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="BHE-SP-QK7"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fourStars" translatesAutoresizingMaskIntoConstraints="NO" id="IQ9-AW-YGF" userLabel="starsImageview">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fourStars" translatesAutoresizingMaskIntoConstraints="NO" id="IQ9-AW-YGF" userLabel="starsImageview">
                                 <rect key="frame" x="175" y="105" width="174" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="jhQ-xC-7US"/>
@@ -243,13 +244,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iy3-Jn-ba3" userLabel="personImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iy3-Jn-ba3" userLabel="personImageView">
                                 <rect key="frame" x="10" y="30" width="150" height="125"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="nRh-x4-FYw"/>
+                                    <constraint firstAttribute="width" secondItem="iy3-Jn-ba3" secondAttribute="height" multiplier="6:5" id="vl3-0f-bZP"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fourStars" translatesAutoresizingMaskIntoConstraints="NO" id="xNn-ta-CxJ" userLabel="starsImageview">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fourStars" translatesAutoresizingMaskIntoConstraints="NO" id="xNn-ta-CxJ" userLabel="starsImageview">
                                 <rect key="frame" x="175" y="105" width="174" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ch3-cN-8dD"/>
@@ -298,12 +299,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="descriptionLabel" destination="pz2-gw-eGA" id="FLh-sS-MO6"/>
-                        <outlet property="foodImageView" destination="iy3-Jn-ba3" id="15i-RQ-9C9"/>
                         <outlet property="nameLabel" destination="dzS-cX-Wdd" id="wIC-hn-D3o"/>
-                        <outlet property="ratingImageView" destination="xNn-ta-CxJ" id="5yu-CR-nYJ"/>
+                        <outlet property="ratingImageView" destination="xNn-ta-CxJ" id="pBX-Bf-Kro"/>
                         <outlet property="reviewLabel" destination="pz2-gw-eGA" id="l6W-bH-YUx"/>
-                        <outlet property="starsImageView" destination="xNn-ta-CxJ" id="bEw-sa-aTu"/>
                         <outlet property="userImageView" destination="iy3-Jn-ba3" id="NaD-Ja-z4w"/>
                     </connections>
                 </viewController>
@@ -311,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="4318" y="458"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Reviews Page View Controller-->
         <scene sceneID="dn0-KE-4jt">
             <objects>
-                <pageViewController storyboardIdentifier="reviewsPageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vuX-eN-SW3" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="reviewsPageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vuX-eN-SW3" customClass="ReviewsPageViewController" customModule="Lunchinator_3000" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WaN-gC-fyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3695" y="181"/>
