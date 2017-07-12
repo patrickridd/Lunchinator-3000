@@ -28,10 +28,20 @@ class RestaurantController {
             }
             
             let restaurants = restaurantDictionaries.flatMap { Restaurant(restaurantDict: $0) }
-            completion(restaurants)
+            let sortedRestaurants = self.sortRestaurants(restaurants) // order restaurants by wait time
+            
+            DispatchQueue.main.async {
+                completion(sortedRestaurants)
+            }
         }
     }
     
-    
+    // Function sorts restaurants by wait time
+    func sortRestaurants(_ restaurants: [Restaurant]) -> [Restaurant] {
+        return restaurants.sorted(by: { (rest1, rest2) -> Bool in
+            return rest1.waitTime < rest2.waitTime
+        })
+        
+    }
     
 }

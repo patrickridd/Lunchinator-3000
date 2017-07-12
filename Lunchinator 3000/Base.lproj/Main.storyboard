@@ -56,7 +56,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Kms-9S-cRa" style="IBUITableViewCellStyleDefault" id="8Vf-Zd-vPP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="restaurantCell" textLabel="Kms-9S-cRa" style="IBUITableViewCellStyleDefault" id="8Vf-Zd-vPP">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Vf-Zd-vPP" id="92h-0z-GWv">
@@ -73,7 +73,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="vlj-fX-h5v" kind="show" id="SZC-Jb-f5Q"/>
+                                    <segue destination="vlj-fX-h5v" kind="showDetail" identifier="toRestaurantVC" action="showViewController:sender:" id="SZC-Jb-f5Q"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

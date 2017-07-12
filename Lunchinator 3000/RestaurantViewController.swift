@@ -10,13 +10,19 @@ import UIKit
 
 class RestaurantViewController: UIViewController {
 
+    var restaurant: Restaurant?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if let restaurant = self.restaurant {
+            self.update(with: restaurant)
+        }
     }
 
-   
+    func update(with restaurant: Restaurant) {
+        self.title = restaurant.name
+    }
     
     
     /*
