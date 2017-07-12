@@ -21,6 +21,10 @@
 		2138A8D31F15CEF000116AAC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D21F15CEF000116AAC /* HomeScreenViewController.swift */; };
 		2138A8D51F15CF0800116AAC /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D41F15CF0800116AAC /* RestaurantTableViewController.swift */; };
 		2138A8D71F15CF3300116AAC /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D61F15CF3300116AAC /* RestaurantViewController.swift */; };
+		2138A8D91F16A22B00116AAC /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8D81F16A22B00116AAC /* RestaurantDetailViewController.swift */; };
+		2138A8DB1F16B38600116AAC /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8DA1F16B38600116AAC /* Rating.swift */; };
+		2138A8DD1F16B81500116AAC /* ReviewsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8DC1F16B81500116AAC /* ReviewsPageViewController.swift */; };
+		2138A8DF1F16BED900116AAC /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A8DE1F16BED900116AAC /* ReviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		2138A8D21F15CEF000116AAC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		2138A8D41F15CF0800116AAC /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		2138A8D61F15CF3300116AAC /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		2138A8D81F16A22B00116AAC /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		2138A8DA1F16B38600116AAC /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		2138A8DC1F16B81500116AAC /* ReviewsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsPageViewController.swift; sourceTree = "<group>"; };
+		2138A8DE1F16BED900116AAC /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,9 @@
 				2138A8D21F15CEF000116AAC /* HomeScreenViewController.swift */,
 				2138A8D41F15CF0800116AAC /* RestaurantTableViewController.swift */,
 				2138A8D61F15CF3300116AAC /* RestaurantViewController.swift */,
+				2138A8D81F16A22B00116AAC /* RestaurantDetailViewController.swift */,
+				2138A8DC1F16B81500116AAC /* ReviewsPageViewController.swift */,
+				2138A8DE1F16BED900116AAC /* ReviewViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -129,6 +140,7 @@
 			children = (
 				2138A8C61F15CE7500116AAC /* Restaurant.swift */,
 				2138A8C81F15CE7E00116AAC /* Review.swift */,
+				2138A8DA1F16B38600116AAC /* Rating.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -249,16 +261,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2138A8DB1F16B38600116AAC /* Rating.swift in Sources */,
 				2138A8CD1F15CE9F00116AAC /* NetworkController.swift in Sources */,
+				2138A8DF1F16BED900116AAC /* ReviewViewController.swift in Sources */,
 				2138A8D71F15CF3300116AAC /* RestaurantViewController.swift in Sources */,
 				2138A8D31F15CEF000116AAC /* HomeScreenViewController.swift in Sources */,
 				2138A8D51F15CF0800116AAC /* RestaurantTableViewController.swift in Sources */,
 				2138A8D11F15CEBB00116AAC /* RestaurantController.swift in Sources */,
 				2138A8CF1F15CEAD00116AAC /* ReviewController.swift in Sources */,
+				2138A8D91F16A22B00116AAC /* RestaurantDetailViewController.swift in Sources */,
 				2138A8C71F15CE7500116AAC /* Restaurant.swift in Sources */,
 				2138A8A41F15CD5100116AAC /* AppDelegate.swift in Sources */,
 				2138A8C91F15CE7E00116AAC /* Review.swift in Sources */,
 				2138A8CB1F15CE8F00116AAC /* ImageController.swift in Sources */,
+				2138A8DD1F16B81500116AAC /* ReviewsPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
